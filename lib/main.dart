@@ -4,7 +4,7 @@ void main() {
   int adultos = 0;
   int mes = 1;
 
-  print('--- Simulação de População de Coelhos (12 meses) ---');
+  print('Simulação de População de Coelhos (12 meses)');
 
   while (mes <= 12) {
     int novosJovens = adultos; 
@@ -12,7 +12,7 @@ void main() {
     jovens = novosJovens * 2; 
 
     int total = jovens + adultos;
-    print('Fim do Mês $mes: População de coelhos: $total, Jovens: $jovens, Adultos: $adultos');
+    print('Fim do mes $mes: População de coelhos: $total, Jovens: $jovens, Adultos: $adultos');
     mes++;
   }
 
@@ -25,6 +25,6 @@ void main() {
     jovens = (total / 2).floor();
     adultos = total - jovens;
 
-    print('Fim do Mês ${mes++}: População de coelhos: $total, Jovens: $jovens, Adultos: $adultos');
+    print('Fim do mes ${mes++}: População de coelhos: $total, Jovens: $jovens, Adultos: $adultos');
   }
 }
